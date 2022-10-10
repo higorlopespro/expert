@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+:root{
+    --primary:rgb(0, 42, 255);
+    --secundary:#000650;
+}
+
+body, html{
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+}
+
+.container-cap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.box-data{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-data > div{
+    text-align: center;
+    max-width: 400px;
+    padding: 15px;
+}
+
+.box-data > div > h1{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box-data > div > p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+}
+
+.box-data > div > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-data > div > form > p{
+    text-align: left;
+    font-weight: 600;
+    color: rgb(117, 117, 117);
+}
+
+.box-data > div > form > .input{
+    outline: none;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px;
+    width: calc(100% - 30px);
+    margin-bottom: 25px;
+}
+
+.btn-capiture{
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.logo-cap{
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+@media (max-width:950px){
+    .container-cap{
+        flex-direction: column;
+    }
+    .box-data{
+        width: 100%;
+    }
+}
+
+.container-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.114);
+}
+
+.box-menu{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .menu-mobile{
+        display: block;
+    }
+    .desktop-menu{
+        display: none;
+    }
+}
+
+#links-mobile-menu{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1001;
+    display: none;
+}
+
+#links-mobile-menu.active{
+    display: block;
+}
+
+#links-mobile-menu > .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.close{
+    margin: 20px 0px;
+    font-size: 30px;
+    color: var(--secundary);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#links-mobile-menu > .links > a{
+    font-size: 30px;
+    color: var(--secundary);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.box-menu-mobile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.icon-burguer{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.icon-burguer > i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.logo{
+    width: 180px;
+}
+
+.links-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.links-menu > a{
+    text-decoration: none;
+    color: var(--secundary);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.links-menu > a:hover{
+    color: var(--primary);
+}
+
+.container-curses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+    max-width: 1275px;
+    margin: 25px auto;
+}
+
+.box-curses{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.114);
+}
+
+.box-curses > div{
+    padding: 10px;
+    color: var(--secundary);
+}
+
+.box-curses > div > h1{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.box-curses > div > p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.box-curses > div > a > button{
+    width: 100%;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.box-curses > img{
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container-play-curse{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.box-play-curse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 75px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.item-play-details{
+    width: 100%;
+    max-width: 400px;
+    margin-left: -30px;
+}
+
+.item-play-aula{
+    width: 100%;
+    max-width: 800px;
+    max-height: 376px;
+}
+
+@media (max-width:1199px){
+    .item-play-aula{
+        height: 500px;
+    }
+}
+
+@media (max-width:790px){
+    .item-play-aula{
+        height:350px;
+    }
+}
+
+@media (max-width:600px){
+    .item-play-aula{
+        height: 230px;
+    }
+}
+
+#aula{
+    height: 100%;
+    padding: 20px;
+    padding-bottom: 7.1%;
+    position: relative;
+}
+
+#aula > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.item-play-aula > #aula > iframe{
+    border-radius: 10px;
+}
+
+.title-play{
+    margin-bottom: 15px;
+    color: var(--secundary);
+    font-weight: 500;
+}
+
+details{
+    background-color: var(--primary);
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+details > .aula{
+    background-color: white;
+    margin: 15px -15px -15px -15px;
+    border-bottom: 1.5px solid var(--primary);
+    border-left: 1.5px solid var(--primary);
+    border-right: 1.5px solid var(--primary);
+    padding: 15px;
+    color: var(--primary);
+}
+
+details > .material{
+    background-color: white;
+    margin: 15px -15px -15px -15px;
+    border-bottom: 1.5px solid var(--primary);
+    border-left: 1.5px solid var(--primary);
+    border-right: 1.5px solid var(--primary);
+    padding: 15px;
+    color: var(--primary);
+}
+
+.container-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-sobre{
+    padding: 20px;
+    margin-top: 35px;
+    width: 100%;
+    max-width: 800px;
+}

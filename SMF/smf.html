@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Social Media Flash</title>
+</head>
+<body>
+    <div id="links-mobile-menu">
+        <div class="links">
+            <div class="close" onclick="menuToggle()"><i class="bi bi-x-lg"></i></div>
+            <a href="../index.html">Cursor</a>
+            <a href="../sobre.html">Sobre</a>
+            <a href="../calculadora.html">Calculadora</a>
+            <a href="../contato.html">Contato</a>
+            <a href="../materiais.html">Materiais</a>
+        </div>
+    </div>
+    <div class="menu-mobile">
+        <div class="container-menu">
+            <div class="box-menu-mobile">
+                <div class="icon-burguer" onclick="menuToggle()">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div>
+                    <img src="../img/logo.png" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desktop-menu">
+        <div class="container-menu">
+            <div class="box-menu">
+                <div>
+                    <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+                </div>
+                <div class="links-menu">
+                    <a href="../index.html">Cursor</a>
+                    <a href="../sobre.html">Sobre</a>
+                    <a href="../calculadora.html">Calculadora</a>
+                    <a href="../contato.html">Contato</a>
+                    <a href="../materiais.html">Materiais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-play-curse">
+        <div class="box-play-curse">
+            <div class="item-play-details">
+                <h1 class="title-play">Social Media Flash</h1>
+                <details>
+                    <summary>AULA - 01</summary>
+                    <div class="aula" onclick="aula01()">
+                        <p><i class="bi bi-play-circle-fill"></i> Como ser um social media em 2022</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>AULA - 02</summary>
+                    <div class="aula" onclick="aula02()">
+                        <p><i class="bi bi-play-circle-fill"></i> Como ser um social media de sucesso</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>AULA - 03</summary>
+                    <div class="aula" onclick="aula03()">
+                        <p><i class="bi bi-play-circle-fill"></i> Como gerar conteúdos para o instagram</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>AULA - 04</summary>
+                    <div class="aula" onclick="aula04()">
+                        <p><i class="bi bi-play-circle-fill"></i> Quanto cobrar</p>
+                    </div>
+                </details>
+            </div>
+            <div class="item-play-aula">
+                <div id="aula">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/_Brgp9C08vE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="../menu.js"></script>
+
+</body>
+</html>
